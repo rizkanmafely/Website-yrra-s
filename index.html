@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yrra's Project Management</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #FFB6D9 0%, #FF6B9D 50%, #FFB6D9 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            overflow-x: hidden;
-        }
+html {
+    background: #FF6B9D;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: #FF6B9D;
+    background: linear-gradient(180deg, #FFB6D9 0%, #FF6B9D 50%, #FFB6D9 100%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
 
         /* Decorative circles */
         .circle {
@@ -67,12 +73,13 @@
         }
 
         .header-content {
-            max-width: 600px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* ← UBAH INI dari space-between */
+    align-items: center;
+    position: relative;  /* ← TAMBAH INI */
+}
 
         .nav-title {
             color: white;
@@ -82,10 +89,12 @@
         }
 
         .search-icon {
-            width: 24px;
-            height: 24px;
-            cursor: pointer;
-        }
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;  /* ← TAMBAH INI */
+    right: 0;  /* ← TAMBAH INI */
+}
 
         /* Main content */
         .container {
